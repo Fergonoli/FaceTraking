@@ -1,0 +1,16 @@
+﻿<Window x:Class="FaceTrackingBasics.Arbol"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Arbol" Height="438" Width="563">
+    <Grid>
+        <Button Content="Aceptar" Height="23" HorizontalAlignment="Left" Margin="186,350,0,0" Name="buttonAceptar" VerticalAlignment="Top" Width="75" Click="buttonAceptar_Click" />
+        <CheckBox Content="1º Arbol TopSkull para 7personas" Height="14" HorizontalAlignment="Left" Margin="33,38,0,0" Name="checkBox_1ArbolTopSkull7personas" VerticalAlignment="Top" />
+        <CheckBox Content="2º Arbol Nariz para 17 Personas" Height="16" HorizontalAlignment="Left" Margin="33,73,0,0" Name="checkBox_2ArbolNariz17Personas" VerticalAlignment="Top" />
+        <CheckBox Content="3º Arbol TopSkull sin Poda para 31 personas" Height="16" HorizontalAlignment="Left" Margin="33,105,0,0" Name="checkBox_3ºArbolTopSkull31PersonasSinPoda" VerticalAlignment="Top" Width="241" />
+        <CheckBox Content="4º Arbol TopSkull Con Poda 31 Personas" Height="16" HorizontalAlignment="Left" Margin="33,137,0,0" Name="checkBox_4ºArbolTopSkullConPoda31personas" VerticalAlignment="Top" />
+        <CheckBox Content="5º Arbol Nariz Con Poda 22 Personas" Height="16" HorizontalAlignment="Left" Margin="33,168,0,0" Name="checkBox_5ºArbolNarizConPoda22Personas" VerticalAlignment="Top" />
+        <CheckBox Content="6º Arbol Caracteristicas TopSkull 31 Personas" Height="16" HorizontalAlignment="Left" Margin="33,203,0,0" Name="checkBox_6ºArbolCaractTopSkull31Personas" VerticalAlignment="Top" />
+        <Label Content="NO USAR " Height="28" HorizontalAlignment="Left" Margin="234,163,0,0" Name="label1" VerticalAlignment="Top" Foreground="#FFF51313" />
+        <CheckBox Content="7º Arbol Caracteristicas TopSkull 31 Personas Normalizados" Height="19" HorizontalAlignment="Left" Margin="33,236,0,0" Name="checkBox_7ºArbolCaractTopSkull31PersonasNorm" VerticalAlignment="Top" />
+    </Grid>
+</Window>

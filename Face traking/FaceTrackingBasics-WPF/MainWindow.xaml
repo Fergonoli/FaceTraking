@@ -1,0 +1,113 @@
+﻿<Window 
+        x:Class="FaceTrackingBasics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:FaceTrackingBasics"
+        Title="Face Tracking Basics"
+        Closed="WindowClosed"
+        Height="490" Width="1124" 
+        >
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="MediumGreyBrush" Color="#ff6e6e6e"/>
+        <SolidColorBrush x:Key="KinectPurpleBrush" Color="#ff52318f"/>
+        <SolidColorBrush x:Key="KinectBlueBrush" Color="#ff00BCF2"/>
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Name="layoutGrid" Margin="10 0 10 10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Margin="0 0 0 20">            
+            <TextBlock DockPanel.Dock="Right" Margin="0 0 -1 0" VerticalAlignment="Bottom" Foreground="{StaticResource MediumGreyBrush}" FontFamily="Segoe UI" FontSize="18">Face Tracking Basics</TextBlock>
+            <Label Content="FPS" Height="28" Name="FPS" Width="78" />
+            <Label Content="Tiempo" Height="28" Name="Tiempo" />
+        </DockPanel>
+        <Viewbox Grid.Row="1" Stretch="Uniform" HorizontalAlignment="Center">
+            <Grid Name="MainGrid" Width="640" Height="480">
+                <Image Name="ColorImage"/>
+                <local:FaceTrackingViewer x:Name="faceTrackingViewer" />
+            </Grid>
+        </Viewbox>
+        <Button Content="Grabar" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="925,335,0,0" Name="Grabar" VerticalAlignment="Top" Width="75" Click="Grabar_Click" />
+        <Button Content="Reinciar" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="173,160,0,0" Name="Reincio" VerticalAlignment="Top" Width="97" Click="Reincio_Click" />
+
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="ImagenEmocionAlegria" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Alegria.jpg" Visibility="Hidden" DataContext="{Binding Source={StaticResource KinectBlueBrush}}" IsManipulationEnabled="False" />
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="ImagnEmocionTristeza" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Tristeza.jpg" Visibility="Hidden" />
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="ImagenEmocionSorpresa" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Sorpresa.jpg" Visibility="Hidden" />
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="ImagenEmocionEnfado" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Enfado.png" Visibility="Hidden" />
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="ImagenEmocionAsco" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Asco.jpg" Visibility="Hidden" />
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="image_Neutra" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Neutra.jpg" Visibility="Hidden" />
+        <Image Grid.Row="1" Height="123" HorizontalAlignment="Left" Margin="87,27,0,0" Name="imageEmocionMiedo" Stretch="Fill" VerticalAlignment="Top" Width="137" Source="/FaceTrackingBasics-WPF;component/Images/Miedo.jpg" Visibility="Hidden" />
+        
+        <RadioButton Content="Enfado" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,145,0,0" Name="radioButtonEnfado" VerticalAlignment="Top" Checked="IsCheckedEnfado" />
+        <RadioButton Content="Asco" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,178,0,0" Name="radioButtonAsco" VerticalAlignment="Top" Checked="IsCheckedAsco" />
+        <RadioButton Content="Miedo" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,218,0,0" Name="radioButtonMiedo" VerticalAlignment="Top" Checked="IsCheckedMiedo" />
+        <RadioButton Content="Alegria" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,76,0,0" Name="radioButtonAlegria" VerticalAlignment="Top" Checked="IsCheckedAlegria" />
+        <RadioButton Content="Tristeza" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,112,0,0" Name="radioButtonTristeza" VerticalAlignment="Top" Checked="IsCheckedTristeza" />
+        <RadioButton Content="Sorpresa" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,253,0,0" Name="radioButtonSorpresa" VerticalAlignment="Top" Checked="IsCheckedSorpresa" />
+        <Label Content="Sin grabar" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="838,27,0,0" Name="LabelInformativoGrabacion" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="925,27,0,0" Name="LabelEtiquetado" VerticalAlignment="Top" />
+        <RadioButton Content="Neutra" Grid.Row="1" Height="16" HorizontalAlignment="Left" Margin="925,296,0,0" Name="radioButtonNeutra" VerticalAlignment="Top" Checked="IsCheckedNeutra" />
+        <Label Content="Porcentajes de Emociones" Grid.Row="1" HorizontalAlignment="Left" Margin="12,155,0,214" Name="label1" FontWeight="Bold" />
+
+        <Label Content="Emocion" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,190,0,0" Name="labelEmoc" VerticalAlignment="Top" />
+        <Label Content="Alegria" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,214,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="Tristeza" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,238,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="Enfado" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,262,0,0" Name="label4" VerticalAlignment="Top" />
+        <Label Content="Asco" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,286,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="Miedo" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,310,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Sorpresa" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,334,0,0" Name="label7" VerticalAlignment="Top" />
+        <Label Content="Neutra" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="27,358,0,0" Name="label8" VerticalAlignment="Top" />
+        
+        <Label Content="Total" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,190,0,0" Name="label_Porcentaje" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,214,0,0" Name="label_Porcentaje_Alegria" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,238,0,0" Name="label_PorcentajeTristeza" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,262,0,0" Name="label_PorcentajeEnfado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,286,907,0" Name="label_PorcentajeAsco" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,310,0,0" Name="label_PorcentajeMiedo" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,334,0,0" Name="label_PorcentajeSorpresa" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="139,358,0,0" Name="label_PorcentajeNeutra" VerticalAlignment="Top" />
+
+        <Label Content="Etiquetado" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,190,0,0" Name="label_Porcentaje_Etiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,214,0,0" Name="label_Porcentaje_AlegriaEtiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,238,0,0" Name="label_PorcentajeTristezaEtiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,262,0,0" Name="label_PorcentajeEnfadoEtiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,286,0,0" Name="label_PorcentajeAscoEtiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,310,0,0" Name="label_PorcentajeMiedoEtiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,334,0,0" Name="label_PorcentajeSorpresaEtiquetado" VerticalAlignment="Top" />
+        <Label Content="Label" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="207,358,0,0" Name="label_PorcentajeNeutraEtiquetado" VerticalAlignment="Top" />
+        
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,190,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,214,0,0" Name="rectangle2" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,238,0,0" Name="rectangle3" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,262,0,0" Name="rectangle4" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,286,0,0" Name="rectangle5" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,310,0,0" Name="rectangle6" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,334,0,0" Name="rectangle7" Stroke="Black" VerticalAlignment="Top" Width="115" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="16,358,0,0" Name="rectangle8" Stroke="Black" VerticalAlignment="Top" Width="115" />
+
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,190,0,0" Name="rectangle11" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,214,0,0" Name="rectangle22" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,238,0,0" Name="rectangle33" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,262,0,0" Name="rectangle44" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,286,0,0" Name="rectangle55" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,310,0,0" Name="rectangle66" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,334,0,0" Name="rectangle77" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="131,358,0,0" Name="rectangle88" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,190,0,0" Name="rectangle111" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,214,0,0" Name="rectangle222" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,238,0,0" Name="rectangle333" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,262,0,0" Name="rectangle444" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,286,0,0" Name="rectangle555" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,310,0,0" Name="rectangle666" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,334,0,0" Name="rectangle777" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Rectangle Grid.Row="1" Height="24" HorizontalAlignment="Left" Margin="199,358,0,0" Name="rectangle888" Stroke="Black" VerticalAlignment="Top" Width="68" />
+        <Button Content="Seleccionar Arboles de decision" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="56,0,0,0" Name="button1" VerticalAlignment="Top" Width="187" Click="button1_Click"/>
+    </Grid>   
+</Window>

@@ -1,0 +1,1 @@
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\FaceTrackingBasics-WPF\bin\x64\Debug\FaceTrackingBasics-WPF.exe.config

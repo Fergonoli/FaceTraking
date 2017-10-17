@@ -1,0 +1,46 @@
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csproj.GenerateResource.Cache
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Fernando\Desktop\Cosas para Kinect\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Silvia\Desktop\Nueva\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Silvia\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\bin\Debug\Microsoft.Kinect.Toolkit.pdb
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csprojResolveAssemblyReference.cache
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.baml
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\KinectSensorChooserUI.g.cs
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit_MarkupCompile.cache
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.g.resources
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.Properties.Resources.resources
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.csproj.GenerateResource.Cache
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.dll
+C:\Users\Fernando\Desktop\Face traking\Microsoft.Kinect.Toolkit\obj\Debug\Microsoft.Kinect.Toolkit.pdb
